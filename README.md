@@ -35,6 +35,27 @@ The page is one route (`app/page.tsx`) composed of section components in
 | FAQ | `Faq.tsx` | First-call questions |
 | Early access | `EarlyAccess.tsx` | Lead capture form |
 
+## Theme
+
+Light "paper" theme. Every colour is a token in the `@theme` block of
+`app/globals.css` — components never hardcode a hex, so a future re-skin is
+that one block plus the OG image.
+
+Two rules worth knowing before you edit colours:
+
+- **There are two ambers.** `amber` (`#f5a300`) is the brand *fill* — buttons,
+  dots, rules, borders — and always carries black text. `amber-ink`
+  (`#a75409`) is the only amber safe to set as *text* on a light surface; it
+  clears 4.5:1. Never use `text-amber`.
+- **`amber-wash` is opaque on purpose.** The panels it tints sit inside
+  `gap-px` grids whose container paints the divider colour, so a translucent
+  tint composites over that and turns muddy.
+
+Surfaces get lighter as they come forward: `ink` (page) → `surface` (cards,
+white) sits on top, `surface-2` recedes into panels and form fields. All
+foreground, accent and status colours meet WCAG AA against the surfaces they
+appear on.
+
 ## Before launch
 
 Three things need a real value:

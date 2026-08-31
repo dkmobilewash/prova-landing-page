@@ -14,7 +14,7 @@ export function Hero() {
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-70" />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_75%_55%_at_50%_-10%,rgba(255,176,32,0.16),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_75%_55%_at_50%_-10%,rgba(245,163,0,0.20),transparent_70%)]"
       />
       <div
         aria-hidden
@@ -29,7 +29,7 @@ export function Hero() {
 
         <h1 className="max-w-4xl text-balance text-[2.6rem] font-bold leading-[1.03] tracking-[-0.02em] sm:text-6xl md:text-[4.25rem]">
           Stop retyping the same numbers into{" "}
-          <span className="text-amber">four different tools.</span>
+          <span className="text-amber-ink">four different tools.</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-fg-muted sm:text-xl">
@@ -44,7 +44,7 @@ export function Hero() {
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <Link
             href="#early-access"
-            className="inline-flex items-center justify-center rounded-md bg-amber px-6 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[#ffc451]"
+            className="inline-flex items-center justify-center rounded-md bg-amber px-6 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[#dd9200]"
           >
             Get early access
           </Link>
@@ -71,7 +71,7 @@ export function Hero() {
                 <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-fg-dim">
                   {i === 0 ? "①" : "→"} {s.label}
                 </p>
-                <p className="mt-2 font-mono text-lg font-semibold tabular-nums text-amber">
+                <p className="mt-2 font-mono text-lg font-semibold tabular-nums text-amber-ink">
                   {s.value}
                 </p>
               </div>

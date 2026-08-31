@@ -101,7 +101,7 @@ export function Capabilities() {
       <div className="mt-14 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
         {groups.map((g) => (
           <div key={g.name}>
-            <h3 className="border-b border-line pb-2.5 text-sm font-semibold tracking-tight text-amber">
+            <h3 className="border-b border-line pb-2.5 text-sm font-semibold tracking-tight text-amber-ink">
               {g.name}
             </h3>
             <ul className="mt-4 space-y-2.5">

@@ -96,7 +96,7 @@ export function Spine() {
     <Section id="how" className="border-t border-line">
       <Eyebrow>How Prova is different</Eyebrow>
       <H2>
-        One line item. <span className="text-amber">Five documents.</span> Zero re-entry.
+        One line item. <span className="text-amber-ink">Five documents.</span> Zero re-entry.
       </H2>
       <Lede>
         This isn&apos;t &ldquo;integration&rdquo; and it isn&apos;t sync. There is exactly
@@ -122,7 +122,7 @@ export function Spine() {
             aria-pressed={co}
             className={`inline-flex items-center gap-2.5 rounded-md border px-3.5 py-2 text-xs font-semibold transition-colors ${
               co
-                ? "border-amber bg-amber/10 text-amber"
+                ? "border-amber bg-amber/15 text-amber-ink"
                 : "border-line-bright text-fg-muted hover:border-fg-dim hover:text-fg"
             }`}
           >
@@ -143,7 +143,7 @@ export function Spine() {
               aria-selected={tab === t}
               onClick={() => setTab(t)}
               className={`relative shrink-0 px-5 py-3.5 text-sm font-medium transition-colors ${
-                tab === t ? "text-amber" : "text-fg-dim hover:text-fg-muted"
+                tab === t ? "text-amber-ink" : "text-fg-dim hover:text-fg-muted"
               }`}
             >
               <span className="font-mono text-[10px] text-fg-dim">
@@ -174,7 +174,7 @@ export function Spine() {
                   </dt>
                   <dd
                     className={`shrink-0 font-mono text-base font-semibold tabular-nums ${
-                      r.accent ? "text-amber" : "text-fg"
+                      r.accent ? "text-amber-ink" : "text-fg"
                     }`}
                   >
                     {r.value}

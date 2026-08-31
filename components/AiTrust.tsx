@@ -31,7 +31,7 @@ export function AiTrust() {
         <H2>
           Prova&apos;s AI never does your math.
           <br className="hidden sm:block" />{" "}
-          <span className="text-amber">It explains math you can trace.</span>
+          <span className="text-amber-ink">It explains math you can trace.</span>
         </H2>
         <Lede>
           Every dollar figure in Prova is produced by a deterministic formula running on
@@ -67,7 +67,7 @@ export function AiTrust() {
                   key={d}
                   className="flex items-center gap-3 rounded-md border border-line bg-surface-2 px-4 py-3 text-sm text-fg-muted"
                 >
-                  <svg viewBox="0 0 16 16" aria-hidden className="h-3.5 w-3.5 shrink-0 text-red/70" fill="none">
+                  <svg viewBox="0 0 16 16" aria-hidden className="h-3.5 w-3.5 shrink-0 text-red" fill="none">
                     <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                   </svg>
                   {d}

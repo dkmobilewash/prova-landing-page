@@ -45,7 +45,7 @@ export function EarlyAccess() {
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-50" />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_110%,rgba(255,176,32,0.14),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_110%,rgba(245,163,0,0.18),transparent_70%)]"
       />
 
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-2">
@@ -64,7 +64,7 @@ export function EarlyAccess() {
           <ul className="mt-8 space-y-3">
             {promises.map((p) => (
               <li key={p} className="flex items-start gap-3 text-sm text-fg-muted">
-                <svg viewBox="0 0 16 16" aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-amber" fill="none">
+                <svg viewBox="0 0 16 16" aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-amber-ink" fill="none">
                   <path
                     d="M3 8.5 6.2 11.7 13 4.9"
                     stroke="currentColor"
@@ -82,7 +82,7 @@ export function EarlyAccess() {
             Rather just email?{" "}
             <a
               href={`mailto:${site.contactEmail}`}
-              className="text-amber underline underline-offset-4 hover:text-[#ffc451]"
+              className="text-amber-ink underline underline-offset-4 hover:text-[#ffc451]"
             >
               {site.contactEmail}
             </a>
@@ -92,7 +92,7 @@ export function EarlyAccess() {
         <div className="rounded-2xl border border-line bg-surface p-6 sm:p-8">
           {status === "done" ? (
             <div className="flex h-full min-h-64 flex-col items-start justify-center">
-              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-amber">
+              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-amber-ink">
                 Got it
               </p>
               <h3 className="mt-3 text-2xl font-bold tracking-tight">
@@ -171,7 +171,7 @@ export function EarlyAccess() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="w-full rounded-md bg-amber px-5 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[#ffc451] disabled:cursor-not-allowed disabled:opacity-60"
+                className="w-full rounded-md bg-amber px-5 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-[#dd9200] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === "sending" ? "Sending…" : "Request early access"}
               </button>
@@ -206,7 +206,7 @@ function Field({
         className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-fg-dim"
       >
         {label}
-        {required && <span className="text-amber"> *</span>}
+        {required && <span className="text-amber-ink"> *</span>}
       </label>
       <input
         id={name}

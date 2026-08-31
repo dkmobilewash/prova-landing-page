@@ -45,7 +45,7 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <Link
             href="#early-access"
-            className="hidden rounded-md bg-amber px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#ffc451] sm:inline-flex"
+            className="hidden rounded-md bg-amber px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#dd9200] sm:inline-flex"
           >
             Get early access
           </Link>

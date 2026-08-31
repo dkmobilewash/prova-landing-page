@@ -15,9 +15,9 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#07080a",
+          background: "#faf9f7",
           padding: "72px",
-          color: "#eef2f6",
+          color: "#14171a",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -26,7 +26,7 @@ export default function OpengraphImage() {
               width: 44,
               height: 44,
               borderRadius: 10,
-              background: "#ffb020",
+              background: "#f5a300",
               display: "flex",
             }}
           />
@@ -34,15 +34,15 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 40, color: "#9aa7b6", marginBottom: 18 }}>
+          <div style={{ fontSize: 40, color: "#4f555c", marginBottom: 18 }}>
             Stop retyping the same numbers into
           </div>
-          <div style={{ fontSize: 86, fontWeight: 700, lineHeight: 1.05, color: "#ffb020" }}>
+          <div style={{ fontSize: 86, fontWeight: 700, lineHeight: 1.05, color: "#a75409" }}>
             four different tools.
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 20, fontSize: 24, color: "#6b7887" }}>
+        <div style={{ display: "flex", gap: 20, fontSize: 24, color: "#656b73" }}>
           <span>Estimate</span>
           <span>→</span>
           <span>Contract</span>

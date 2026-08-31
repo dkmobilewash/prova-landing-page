@@ -99,7 +99,7 @@ export function Problem() {
       <div className="mt-16 grid gap-6 sm:grid-cols-2">
         {costs.map((c) => (
           <div key={c.n} className="border-l-2 border-line-bright pl-5">
-            <p className="font-mono text-xs text-amber">{c.n}</p>
+            <p className="font-mono text-xs text-amber-ink">{c.n}</p>
             <h3 className="mt-1.5 text-lg font-semibold tracking-tight">{c.head}</h3>
             <p className="mt-2 text-sm leading-relaxed text-fg-muted">{c.body}</p>
           </div>

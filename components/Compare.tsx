@@ -89,7 +89,7 @@ function MarkCell({ mark }: { mark: Mark }) {
       </span>
     );
   return (
-    <span className="inline-flex text-red/70" title="No">
+    <span className="inline-flex text-red" title="No">
       <Cross />
       <span className="sr-only">No</span>
     </span>
@@ -130,13 +130,13 @@ export function Compare() {
                   scope="col"
                   className={`border-b py-4 align-bottom text-center ${
                     c.key === "prova"
-                      ? "border-amber bg-amber/[0.06]"
+                      ? "border-amber bg-amber/[0.09]"
                       : "border-line"
                   }`}
                 >
                   <span
                     className={`block whitespace-pre-line text-[13px] font-semibold leading-tight ${
-                      c.key === "prova" ? "text-amber" : "text-fg"
+                      c.key === "prova" ? "text-amber-ink" : "text-fg"
                     }`}
                   >
                     {c.label}
@@ -161,7 +161,7 @@ export function Compare() {
                   <td
                     key={c.key}
                     className={`border-b py-4 text-center ${
-                      c.key === "prova" ? "border-amber/30 bg-amber/[0.06]" : "border-line"
+                      c.key === "prova" ? "border-amber/40 bg-amber/[0.09]" : "border-line"
                     }`}
                   >
                     <span className="inline-flex justify-center">
@@ -183,7 +183,7 @@ export function Compare() {
           <Dash className="text-fg-dim" /> Partial or varies by product
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <Cross className="text-red/70" /> Not what it&apos;s for
+          <Cross className="text-red" /> Not what it&apos;s for
         </span>
       </div>
 

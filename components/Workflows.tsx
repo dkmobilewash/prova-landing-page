@@ -68,7 +68,7 @@ export function Workflows() {
             className="overflow-hidden rounded-xl border border-line bg-surface"
           >
             <div className="flex flex-wrap items-center gap-3 border-b border-line px-5 py-4">
-              <span className="font-mono text-xs text-amber">
+              <span className="font-mono text-xs text-amber-ink">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="text-base font-semibold tracking-tight sm:text-lg">{m.title}</h3>
@@ -85,7 +85,7 @@ export function Workflows() {
                 </p>
                 <p className="text-sm leading-relaxed text-fg-muted">{m.now}</p>
               </div>
-              <div className="bg-surface-2 p-5">
+              <div className="bg-amber-wash p-5">
                 <p className="mb-2.5 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-green">
                   <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-green" />
                   In Prova

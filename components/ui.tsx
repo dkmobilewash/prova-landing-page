@@ -19,8 +19,8 @@ export function Section({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <p className="mb-4 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-amber">
-      <span aria-hidden className="h-px w-6 bg-amber/60" />
+    <p className="mb-4 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-amber-ink">
+      <span aria-hidden className="h-px w-6 bg-amber" />
       {children}
     </p>
   );
@@ -59,7 +59,7 @@ export function Button({
     "inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold tracking-tight transition-colors";
   const styles =
     variant === "primary"
-      ? "bg-amber text-black hover:bg-[#ffc451]"
+      ? "bg-amber text-black hover:bg-[#dd9200]"
       : "border border-line-bright text-fg hover:border-fg-dim hover:bg-surface-2";
   return (
     <Link href={href} className={`${base} ${styles} ${className}`}>

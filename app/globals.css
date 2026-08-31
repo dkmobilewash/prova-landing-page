@@ -1,22 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #07080a;
-  --color-surface: #0e1116;
-  --color-surface-2: #151a21;
-  --color-surface-3: #1c222b;
-  --color-line: #232b36;
-  --color-line-bright: #33404f;
+  /* Light "paper" palette. Surfaces get lighter as they come forward:
+     ink (page) → surface (cards, white) sits on top, surface-2 recedes
+     into panels and form fields. */
+  --color-ink: #faf9f7;
+  --color-surface: #ffffff;
+  --color-surface-2: #f2f1ed;
+  --color-surface-3: #e9e7e1;
+  --color-line: #e4e2dc;
+  --color-line-bright: #c4c0b6;
 
-  --color-fg: #eef2f6;
-  --color-fg-muted: #9aa7b6;
-  --color-fg-dim: #6b7887;
+  --color-fg: #14171a;
+  --color-fg-muted: #4f555c;
+  --color-fg-dim: #656b73;
 
-  --color-amber: #ffb020;
-  --color-amber-deep: #cf8000;
-  --color-blue: #5aa2ff;
-  --color-green: #3ddc97;
-  --color-red: #ff6b6b;
+  /* Two ambers: `amber` is the brand fill (buttons, dots, rules, borders)
+     and always carries black text. `amber-ink` is the only amber safe to
+     set as text on a light surface — it clears 4.5:1 on --color-ink. */
+  --color-amber: #f5a300;
+  --color-amber-ink: #a75409;
+  --color-amber-deep: #7d3f06;
+  /* Opaque amber wash for panels that sit inside a gap-px grid — a
+     translucent tint there composites over the divider colour and muddies. */
+  --color-amber-wash: #fdf6e9;
+
+  --color-blue: #1d64c4;
+  --color-green: #0f7b4f;
+  --color-red: #bc2c2c;
 
   --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono-face), ui-monospace, SFMono-Regular, monospace;
@@ -29,7 +40,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     background-color: var(--color-ink);
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   body {
@@ -45,7 +56,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-amber);
+    outline: 2px solid var(--color-amber-ink);
     outline-offset: 2px;
   }
 }
@@ -62,17 +73,10 @@
   }
 }
 
-/* Blueprint grid used behind the hero and section breaks. */
+/* Blueprint grid used behind the hero and the closing CTA. */
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(20, 23, 26, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 23, 26, 0.055) 1px, transparent 1px);
   background-size: 56px 56px;
-}
-
-.bg-grid-fine {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 14px 14px;
 }

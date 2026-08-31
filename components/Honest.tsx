@@ -50,18 +50,18 @@ export function Honest() {
           </ul>
         </div>
 
-        <div className="bg-surface-2 p-6 sm:p-8">
-          <p className="mb-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-amber">
+        <div className="bg-amber-wash p-6 sm:p-8">
+          <p className="mb-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-amber-ink">
             <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-amber" />
             On the roadmap
           </p>
           <ul className="space-y-4">
             {soon.map((n) => (
-              <li key={n.thing} className="border-l-2 border-amber/30 pl-4">
+              <li key={n.thing} className="border-l-2 border-amber pl-4">
                 <h3 className="flex flex-wrap items-center gap-2 text-sm font-semibold">
                   {n.thing}
                   {n.active && (
-                    <span className="rounded border border-amber/40 bg-amber/10 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.14em] text-amber">
+                    <span className="rounded border border-amber/60 bg-amber/15 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.14em] text-amber-ink">
                       In development
                     </span>
                   )}
