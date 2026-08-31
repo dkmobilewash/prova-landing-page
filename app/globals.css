@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #07080a;
+  --color-surface: #0e1116;
+  --color-surface-2: #151a21;
+  --color-surface-3: #1c222b;
+  --color-line: #232b36;
+  --color-line-bright: #33404f;
+
+  --color-fg: #eef2f6;
+  --color-fg-muted: #9aa7b6;
+  --color-fg-dim: #6b7887;
+
+  --color-amber: #ffb020;
+  --color-amber-deep: #cf8000;
+  --color-blue: #5aa2ff;
+  --color-green: #3ddc97;
+  --color-red: #ff6b6b;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-face), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    /* clip, not hidden: keeps position:sticky working in the sections that use it */
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background-color: var(--color-ink);
+    color-scheme: dark;
+  }
+
+  body {
+    overflow-x: clip;
+    background-color: var(--color-ink);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-amber);
+    color: #000;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-amber);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Blueprint grid used behind the hero and section breaks. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-grid-fine {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
