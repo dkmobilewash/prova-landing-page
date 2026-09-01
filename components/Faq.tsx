@@ -6,6 +6,10 @@ const faqs = [
     a: "Yes. The union side — CBAs, locals, effective-dated fringes, certified payroll — is there when you need it and out of the way when you don't. The estimate-to-pay-app spine is the same either way.",
   },
   {
+    q: "That's a lot more than we pay for QuickBooks.",
+    a: "It is, and it should be — QuickBooks is your ledger, not your job. The comparison that matters isn't Prova against your accounting software, it's Prova against the office hours, the missed change orders and the margin drift above. If one change order a year gets billed that otherwise wouldn't have, the year is paid for. If none of that is happening at your shop, don't buy this.",
+  },
+  {
     q: "Do we have to leave QuickBooks?",
     a: "No. Straight answer: today you can connect your QuickBooks Online account, but two-way sync isn't built yet. Prova isn't your general ledger. It's where the job lives — estimate, contract, budget, job cost, billing.",
   },

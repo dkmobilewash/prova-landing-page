@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Honest } from "@/components/Honest";
 import { Nav } from "@/components/Nav";
+import { Pricing } from "@/components/Pricing";
 import { Problems } from "@/components/Problems";
 import { Spine } from "@/components/Spine";
 import { Worth } from "@/components/Worth";
@@ -19,6 +20,7 @@ export default function Home() {
         <Problems />
         <Spine />
         <Worth />
+        <Pricing />
         <Compare />
         <Everything />
         <Honest />

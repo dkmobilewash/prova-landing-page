@@ -28,6 +28,7 @@ know what this is and why it's worth paying for without a long scroll.
 | The problems | `Problems.tsx` | Six problems in contractor voice, each with its fix on the same row — the "is this me?" test |
 | How it works | `Spine.tsx` | Interactive: the same line item rendered as each of the five documents, with a change-order toggle that moves all five at once |
 | Is it worth it? | `Worth.tsx` | The ROI case — one missed CO, one week a month, one job that drifts. Framed as arithmetic to run on their own numbers, not a savings claim |
+| Pricing | `Pricing.tsx` | Three tiers, scaled by company size — **prices are placeholders**, see below |
 | Compare | `Compare.tsx` | Six decisive rows against categories of alternatives |
 | Everything else | `Everything.tsx` | The rest of what's built, plus the union and AI-trust callouts |
 | What's missing | `Honest.tsx` | Not-built and roadmap, stated plainly |
@@ -63,13 +64,20 @@ appear on.
 
 Three things need a real value:
 
-1. **Domain and contact email** — `lib/site.ts`. Everything that renders a URL or
+1. **Prices.** `lib/pricing.ts` ships with placeholder numbers and placeholder
+   scale limits. Every one of them needs replacing. Two things to preserve when
+   you set the real ones: tiers scale by *company size*, not by feature, because
+   the app has no plan gating built (two roles, no billing tiers) and a page that
+   gated features would be advertising something that doesn't exist. And the ROI
+   section directly above pricing frames the decision against one missed change
+   order — keep the tiers in a range where that comparison still lands.
+2. **Domain and contact email** — `lib/site.ts`. Everything that renders a URL or
    an address (metadata, OG tags, sitemap, robots, footer) reads from there.
-2. **Where leads go** — `app/api/early-access/route.ts` currently validates the
+3. **Where leads go** — `app/api/early-access/route.ts` currently validates the
    submission and logs it. Wire the `TODO(launch)` to a CRM, a transactional
    email provider, or a database. Nothing else needs to change; the form already
    posts JSON and handles error responses.
-3. **Copy accuracy** — every claim on the page is scoped to what is actually
+4. **Copy accuracy** — every claim on the page is scoped to what is actually
    built today, and `Honest.tsx` names what isn't. When a roadmap item ships,
    move it out of `Honest.tsx` and into `Capabilities.tsx` rather than adding it
    in both places.
