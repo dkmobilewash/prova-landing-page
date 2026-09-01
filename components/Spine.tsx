@@ -94,15 +94,13 @@ export function Spine() {
 
   return (
     <Section id="how" className="border-t border-line">
-      <Eyebrow>How Prova is different</Eyebrow>
+      <Eyebrow>How it works</Eyebrow>
       <H2>
-        One line item. <span className="text-amber-ink">Five documents.</span> Zero re-entry.
+        One line item. <span className="text-amber-ink">Five documents.</span>
       </H2>
       <Lede>
-        This isn&apos;t &ldquo;integration&rdquo; and it isn&apos;t sync. There is exactly
-        one place your line-item data lives. The estimate line, the contract line, the
-        budget line, the job cost line and the G703 line are the same row — so they can
-        never disagree.
+        Click through the five tabs below. It&apos;s the same row every time. Then hit
+        the change order button and watch all five move at once.
       </Lede>
 
       <div className="mt-12 overflow-hidden rounded-2xl border border-line bg-surface">

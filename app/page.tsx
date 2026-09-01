@@ -1,16 +1,14 @@
-import { AiTrust } from "@/components/AiTrust";
-import { Capabilities } from "@/components/Capabilities";
 import { Compare } from "@/components/Compare";
 import { EarlyAccess } from "@/components/EarlyAccess";
+import { Everything } from "@/components/Everything";
 import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Honest } from "@/components/Honest";
 import { Nav } from "@/components/Nav";
-import { Problem } from "@/components/Problem";
+import { Problems } from "@/components/Problems";
 import { Spine } from "@/components/Spine";
-import { Union } from "@/components/Union";
-import { Workflows } from "@/components/Workflows";
+import { Worth } from "@/components/Worth";
 
 export default function Home() {
   return (
@@ -18,13 +16,11 @@ export default function Home() {
       <Nav />
       <main id="main">
         <Hero />
-        <Problem />
+        <Problems />
         <Spine />
-        <Workflows />
+        <Worth />
         <Compare />
-        <Union />
-        <AiTrust />
-        <Capabilities />
+        <Everything />
         <Honest />
         <Faq />
         <EarlyAccess />

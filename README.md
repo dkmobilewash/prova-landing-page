@@ -19,21 +19,24 @@ npm run lint
 ## Page structure
 
 The page is one route (`app/page.tsx`) composed of section components in
-`components/`, in scroll order:
+`components/`, in scroll order. It is deliberately short — a contractor should
+know what this is and why it's worth paying for without a long scroll.
 
 | Section | Component | Job it does |
 | --- | --- | --- |
-| Hero | `Hero.tsx` | The headline pitch — one line item across five documents |
-| The four-copy problem | `Problem.tsx` | Names the re-entry treadmill the reader lives in |
-| How it works | `Spine.tsx` | Interactive: the same line item rendered as estimate → contract → budget → job cost → pay app, with a change-order toggle that moves all five at once |
-| Your week | `Workflows.tsx` | Six daily moments, "how it goes today" vs. "in Prova" |
-| Compare | `Compare.tsx` | Capability matrix against categories of alternatives |
-| Union | `Union.tsx` | CBAs, effective-dated fringes, certified payroll |
-| AI trust | `AiTrust.tsx` | The AI explains math, it never calculates it |
-| Capabilities | `Capabilities.tsx` | Everything built today |
-| What it doesn't do | `Honest.tsx` | Not-built-yet and roadmap, stated plainly |
-| FAQ | `Faq.tsx` | First-call questions |
+| Hero | `Hero.tsx` | States the problem in two lines, the mechanism in three, then three things you stop doing |
+| The problems | `Problems.tsx` | Six problems in contractor voice, each with its fix on the same row — the "is this me?" test |
+| How it works | `Spine.tsx` | Interactive: the same line item rendered as each of the five documents, with a change-order toggle that moves all five at once |
+| Is it worth it? | `Worth.tsx` | The ROI case — one missed CO, one week a month, one job that drifts. Framed as arithmetic to run on their own numbers, not a savings claim |
+| Compare | `Compare.tsx` | Six decisive rows against categories of alternatives |
+| Everything else | `Everything.tsx` | The rest of what's built, plus the union and AI-trust callouts |
+| What's missing | `Honest.tsx` | Not-built and roadmap, stated plainly |
+| FAQ | `Faq.tsx` | The five real objections |
 | Early access | `EarlyAccess.tsx` | Lead capture form |
+
+Length is a feature here. Before adding a section, check whether it repeats
+something above it — an earlier draft said the same thing three different ways
+and buried the pitch.
 
 ## Theme
 
